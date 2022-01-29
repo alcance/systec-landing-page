@@ -9,7 +9,7 @@ import gsap from 'gsap'
 const gui = new dat.GUI()
 
 const parameters = {
-    materialColor: '#5d76cb'
+    materialColor: '#404040'
 }
 
 gui
@@ -96,9 +96,9 @@ particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 
 
 // Material
 const particlesMaterial = new THREE.PointsMaterial({
-    color: 'white',
+    color: '#1d1d1b',
     sizeAttenuation: textureLoader,
-    size: 0.03
+    size: 0.1
 })
 
 // Points

@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
     <canvas class="webgl"></canvas>
@@ -21,7 +22,7 @@
     </section>
     <div class="section">
       <div>
-        <img src="../static/images/logo-white.png" width="250px" alt="" />
+        <img src="../static/images/logo-dark.png" width="350px" alt="" />
       </div>
     </div>
 
@@ -39,5 +40,16 @@
     <section class="section footer">
       <span><a href="mailto:im@systec.dev">im@</a></span>
     </section>
+    <div id="circularcursor"></div>
   </body>
+  <script>
+    $(document).ready(function() {
+    $(document).on('mousemove', function(e) {
+        $('#circularcursor').css({
+        left: e.pageX,
+        top: e.pageY
+        });
+    })
+    });
+  </script>
 </html>
